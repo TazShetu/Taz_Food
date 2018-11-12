@@ -1,0 +1,689 @@
+/*orenge dark #e67e22  */
+
+/*----------------------------*/
+/*BASIC SETUP*/
+/*----------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white; 
+    color: #656565;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    /*  overflow: hidden;  */  /*schroll bar remove kore */
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*----------------------------*/
+/*Reusable Component*/
+/*----------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0px;
+    padding-right: 0px; 
+    
+}
+
+.box {
+    padding: 1%;
+    
+}
+
+
+/*-------HEADING---------*/
+
+h1,
+h2,
+h3 {    
+    font-weight: 300;
+    text-transform: uppercase;
+      
+    
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px; 
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px; 
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px; 
+    
+}
+
+h2:after {
+   display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 400px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------PARAGRAPH-------*/
+
+.long-copyH2P {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*----------ICON---------*/
+
+.iconBig {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+
+.iconSmall {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 7px;
+    
+    /*  make icon allign with text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    
+}
+
+
+/*---------LINKS--------*/
+
+
+
+.linkTwitter:link,        /* ami class add korsi */
+.linkTwitter:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.5s, color 0.5s;
+    transition: border-bottom 0.5s, color 0.5s;    
+}
+
+.linkTwitter:hover,       /* ami class add korsi */
+.linkTwitter:active {
+    color: #555;  /*  our font color */
+    border-bottom: 1px solid transparent;
+}
+
+
+
+
+
+
+/*---------BUTTONS--------*/
+
+.button:link,
+.button:visited,
+input[type=submit] {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 300; 
+    text-decoration: none;    /* no underline  */
+    border-radius: 200px;
+    -webkit-transition: background-color 0.25s, border 0.25s, color 0.25s;
+    transition: background-color 0.25s, border 0.25s, color 0.25s;
+}
+
+
+
+.btnFull:link,
+.btnFull:visited,
+input[type=submit] {
+    color: white;
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    margin-right: 15px;
+}
+
+.btnGhost:link,
+.btnGhost:visited{
+    color: #e67e22;
+    border: 1px solid #e67e22; 
+}
+
+
+
+.button:hover,
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+}
+
+
+.btnFull:hover,
+.btnFull:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #cf6d17;
+}
+
+.btnGhost:hover,
+.btnGhost:active{
+    color: white;
+    border: 1px solid #cf6d17; 
+}
+
+/*----------------------------*/
+/*Header */
+/*----------------------------*/
+
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(Images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed; 
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;    
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;  /*move left*/ 
+    margin-top: 20px;
+}
+
+.mainNav {
+    float: right;  /*move right*/
+    list-style: none;  /*default listStyle Cancel*/    
+}
+
+.mainNav li {
+    display: inline-block;
+    margin-left: 40px;  
+    margin-top: 55px;
+    
+}
+
+
+.mainNav li a:link,
+.mainNav li a:visited{
+    padding-top: 6px;       /* gap between botomBorder and text */
+    padding-bottom: 6px;    /* gap between botomBorder and text */
+    padding-left: 0px;
+    padding-right: 0px;
+    color: white;
+    text-decoration: none;            /* by default underline cancel */
+    text-transform: uppercase;        /* all upper case */
+    font-size: 90%;               /*------ always relative --------*/
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+    
+}
+
+.mainNav li a:hover,
+.mainNav li a:active{
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+
+/*----------------------------*/
+/* FEATURES */
+/*----------------------------*/
+
+.sectionFeature .long-copyH2P {   /* instade of writing only .longcopyH2P{ we should practise writhing complete class tree  */ 
+    
+    margin-bottom: 30PX;  
+}
+
+
+
+
+
+/*----------------------------*/
+/* MEAL */
+/*----------------------------*/
+
+
+.sectionMeal {
+    padding: 0;
+    
+}
+
+.mealsShowcase {
+    list-style: none;  /* Cancel default list-style */
+    width: 100%;
+}
+
+.mealsShowcase li {
+    display: block;
+    float: left;     /*  make them side by side */
+    width: 25%;
+   
+}
+
+.mealPhoto {
+    width: 100%; /* 100% mease parents 100% width >> li has 25% of mealShowcase so mealPhoto has full 25% (100% of li) */
+    margin: 0; /* first a * er modhe thakleo normalized aro akta add kore. oitao cancle */
+    overflow: hidden;  /* to cancle overlaping images after zoom in */
+    background-color: black; /* we want the image darker if transparent */
+}
+
+.mealPhoto img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15); /* 15% zoom in image */  
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;  
+    transition: opacity 0.5s, -webkit-transform 0.5s;  
+    transition: transform 0.5s, opacity 0.5s;  
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;    /*  make delay in transformation   */
+} 
+
+.mealPhoto img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+
+
+/*----------------------------*/
+/* How it Works */
+/*----------------------------*/
+
+
+.tazEdit1 {
+    margin-right: 25%
+}
+
+.sectionSteps {
+    background-color: #f7f7f7;
+}
+
+.stepBox:first-child {
+    text-align: right;    /* text-align works for all in line elements not only text. Right is right of box not right of window */
+    padding-right: 3%;   /* relative thats why % */
+    margin-top: 30px;
+    
+}
+
+.stepBox:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+   
+}
+
+.appScrene {
+    width: 40%;   
+    
+}
+
+.workStep {
+    margin-bottom: 50px;
+}
+
+.workStep:last-of-type {
+    margin-bottom: 80px;
+}
+
+.workStep div {
+    color: #e67e22; 
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;    /* very high to make cicle */
+    height: 55px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btnApp img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    margin-left: 5%;      /* tazEdit */
+}
+
+
+/*----------------------------*/
+/* CITIES*/
+/*----------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.cityFeature {
+    margin-bottom: 5px;
+}
+
+
+
+/*----------------------------*/
+/* TESTIMONIALS */
+/*----------------------------*/
+
+
+.sectionTestimonial {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(Images/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;  /*  picture doesNot move when scrolled */
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;    
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+}
+
+
+
+/*----------------------------*/
+/* SignUp Plans */
+/*----------------------------*/
+
+.sectionPlans {
+    background-color: #f7f7f7;
+}
+
+.planBox {
+    background-color: white;
+    border-radius: 5px;    /* edge smoth   */
+    width: 90%;
+    margin-left: 5%;
+    -webkit-box-shadow: 2px 4px 2px #efefef;
+    box-shadow: 2px 4px 2px #efefef;
+    
+}
+
+.planBox div {
+    padding: 15px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.planBox div:first-child {
+    background-color: #fdfdfd;
+    border-top-left-radius: 5px;  /* last child border 0 edge smoth cancel kore, so again */
+    border-top-right-radius: 5px;
+}
+
+.planBox div:last-child {
+    text-align: center;
+    border: 0;     /*  if background class does not match then last a border bottom cancel */
+}
+
+.planPrice {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #e67e22;
+}
+
+.planPrice span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.planPriceMeal {
+    font-size: 80%;
+}
+
+
+.planBox ul {
+    list-style: none;  /* by default style cancel */
+}
+
+.planBox ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*----------------------------*/
+/* Forms */
+/*----------------------------*/
+
+.contactForm {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+   width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin-top: 10px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.tazEdit2 {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+*:focus {outline: none;}
+
+
+/*----------------------------*/
+/* Footer */
+/*----------------------------*/
+
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80% 
+}
+
+.footerNav {
+    list-style:none;
+    float:left;         
+    
+}
+
+.socialLinks {
+    list-style: none;
+    float:right;          
+    
+}
+
+.footerNav li,
+.socialLinks li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.footerNav li:last-child,
+.socialLinks li:last-child {
+    margin-right: 0;
+}
+
+
+.footerNav li a:link,
+.footerNav li a:visited,
+.socialLinks li a:link,
+.socialLinks li a:visited {
+    text-decoration: none;    /* no underline  */
+    border: 0;                /* cancel the border that we declar for all a */
+    color: #888;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+
+.footerNav li a:hover,
+.footerNav li a:active {
+    color: #ddd;
+}
+
+
+.socialLinks li a:link,
+.socialLinks li a:visited {
+    font-size: 130%;
+    
+}
+
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    
+}
+
+
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+.ion-social-instagram:hover {
+    color: #bc2a8d;
+}
+
+
+
+footer p {                 
+    color: #888;
+    text-align: center;      /*  middle a  */
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

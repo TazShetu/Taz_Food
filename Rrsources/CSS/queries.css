@@ -1,0 +1,134 @@
+
+/*  small phones 0 to 1023px big tablet to 1200px smaller than row 1140px */
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;    
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .row {
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+
+}
+
+
+
+/*  small phones 768 to 1023px small tablet to big tablet */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+    
+    section {
+        padding-bottom: 60px;
+        padding-top: 60px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .long-copyH2P {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+    .stepBox { margin-top: 10px;}
+    .workStep { margin-bottom: 40px;}
+    .workStep:last-of-type { margin-bottom: 60px;}
+    .stepBox:last-child { margin-top: 10px;}
+    .appScrene { width: 50%;}
+    .iconSmall {
+        width: 17px;
+        margin-right: 10px;
+    }
+    .cityFeature {font-size: 90%;}
+    .planBox {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .planPrice { font-size: 250%;}
+    .contactForm { width: 80%;}
+
+
+}
+    
+
+
+
+/*  small phones 481 to 767px Ipad */
+
+@media only screen and (max-width: 767px) {
+    body {font-size: 16px;}
+    section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row,
+    .hero-text-box {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .col {
+        width: 100%;
+        margin: 0 0 1% 0;
+    }
+    .mainNav {display: none;}
+    .long-copyH2P {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+     }
+    h1 { font-size: 180%;}
+    h2 { font-size: 150%;}
+    .workStep { margin-bottom: 20px;}
+    .workStep:last-of-type { margin-bottom: 20px;}
+    .workStep div { 
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        margin-right: 15px;
+        font-size: 120%;
+    }
+    .stepBox:first-child {
+        text-align:center;    
+        padding-right: 0%; 
+        margin-top: 0;
+    }
+    .appScrene { width: 40%;}
+    .box img { width: 60%;}
+}
+
+
+
+
+/*  small phones 0 to 480px iphone 5 */
+
+@media only screen and (max-width: 480px) {
+    section {
+        padding-bottom: 25px;
+        padding-top: 25px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contactForm { width: 100%;}
+
+    
+}
+
+
+
+
+
+
+
+
